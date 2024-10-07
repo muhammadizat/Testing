@@ -25,7 +25,14 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Image container for centering the image */
+/* Row to align images side by side */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Image container for each image */
 .image-container {
     display: inline-block;
     overflow: hidden;
@@ -33,8 +40,8 @@ h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Cat image styling */
-.cat-image {
+/* Animal images styling */
+.animal-image {
     width: 300px;
     height: auto;
     transition: transform 0.3s ease-in-out;
@@ -42,6 +49,6 @@ h1 {
 }
 
 /* Hover effect */
-.cat-image:hover {
+.animal-image:hover {
     transform: scale(1.2); /* Scale up the image */
 }
