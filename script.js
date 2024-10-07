@@ -1,7 +1,5 @@
-function showAnimal() {
-    const animalSelector = document.getElementById('animalSelector');
+function showAnimal(animal) {
     const imageContainer = document.getElementById('imageContainer');
-    const selectedAnimal = animalSelector.value;
 
     // Clear any previous content in the image container
     imageContainer.innerHTML = '';
@@ -15,22 +13,20 @@ function showAnimal() {
         });
     }
 
-    // Check user selection and display the appropriate image
-    if (selectedAnimal === 'cat') {
+    // Check the user choice and display the appropriate image
+    if (animal === 'cat') {
         const img = document.createElement('img');
         img.src = 'cat.jpg';
         img.alt = 'Cute Cat';
         img.className = 'animal-image';
         imageContainer.appendChild(img);
         runConfetti(); // Fire confetti
-    } else if (selectedAnimal === 'dog') {
+    } else if (animal === 'dog') {
         const img = document.createElement('img');
         img.src = 'dog.jpg';
         img.alt = 'Cute Dog';
         img.className = 'animal-image';
         imageContainer.appendChild(img);
         runConfetti(); // Fire confetti
-    } else {
-        alert('Please select an animal!');
     }
 }
