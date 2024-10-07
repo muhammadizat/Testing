@@ -20,22 +20,42 @@ body {
     text-align: center;
 }
 
-/* Dropdown styling */
-select {
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
+/* Heading styling */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Row to align buttons side by side */
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 /* Button styling */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
+.animal-button {
+    padding: 15px 30px;
+    font-size: 20px;
     border: none;
-    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #4CAF50; /* Default background color */
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hover effect: Scale the button and change color */
+.animal-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Make the button slightly larger */
+}
+
+/* Active (click) effect: Slightly shrink the button */
+.animal-button:active {
+    transform: scale(0.95); /* Make the button slightly smaller on click */
 }
 
 /* Image container */
