@@ -10,13 +10,11 @@
     <div class="container">
         <h1>Choose an Animal</h1>
         
-        <!-- Dropdown for choosing between cat and dog -->
-        <select id="animalSelector">
-            <option value="none">-- Select an Animal --</option>
-            <option value="cat">Cat</option>
-            <option value="dog">Dog</option>
-        </select>
-        <button onclick="showAnimal()">Show Animal</button>
+        <!-- Buttons for choosing between cat and dog -->
+        <div class="button-row">
+            <button id="catButton" class="animal-button" onclick="showAnimal('cat')">Cat</button>
+            <button id="dogButton" class="animal-button" onclick="showAnimal('dog')">Dog</button>
+        </div>
 
         <!-- Container to display the selected image -->
         <div class="image-container" id="imageContainer"></div>
