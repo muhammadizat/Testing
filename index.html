@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Cat and Dog Pictures</title>
+    <title>Interactive Animal Selector with Confetti</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Hover over the images!</h1>
-        <div class="image-row">
-            <div class="image-container">
-                <img src="cat.jpg" alt="Cute Cat" class="animal-image">
-            </div>
-            <div class="image-container">
-                <img src="dog.jpg" alt="Cute Dog" class="animal-image">
-            </div>
-        </div>
+        <h1>Choose an Animal</h1>
+        
+        <!-- Dropdown for choosing between cat and dog -->
+        <select id="animalSelector">
+            <option value="none">-- Select an Animal --</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+        </select>
+        <button onclick="showAnimal()">Show Animal</button>
+
+        <!-- Container to display the selected image -->
+        <div class="image-container" id="imageContainer"></div>
     </div>
+
+    <!-- Confetti JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
