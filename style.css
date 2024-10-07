@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -19,36 +20,33 @@ body {
     text-align: center;
 }
 
-/* Heading styling */
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+/* Dropdown styling */
+select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
 }
 
-/* Row to align images side by side */
-.image-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-/* Image container for each image */
+/* Image container */
 .image-container {
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-top: 20px;
 }
 
 /* Animal images styling */
 .animal-image {
     width: 300px;
     height: auto;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-/* Hover effect */
-.animal-image:hover {
-    transform: scale(1.2); /* Scale up the image */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
